@@ -1,0 +1,2 @@
+# prestizniGameska
+Dlouhodobý maturitní projekt
