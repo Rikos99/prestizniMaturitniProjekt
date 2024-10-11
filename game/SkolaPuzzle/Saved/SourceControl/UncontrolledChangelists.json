@@ -5,6 +5,11 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"C:/Users/s.janca.st/Documents/GitHub/prestizniMaturitniProjekt/game/SkolaPuzzle/Content/UI/Inventory/WBP_InventoryBar.uasset",
+				"C:/Users/s.janca.st/Documents/GitHub/prestizniMaturitniProjekt/game/SkolaPuzzle/Content/UI/Inventory/WBP_InventoryItem.uasset",
+				"C:/Users/s.janca.st/Documents/GitHub/prestizniMaturitniProjekt/game/SkolaPuzzle/Content/Player/BPAC_Inventory.uasset",
+				"C:/Users/s.janca.st/Documents/GitHub/prestizniMaturitniProjekt/game/SkolaPuzzle/Content/MainLevel.umap",
+				"C:/Users/s.janca.st/Documents/GitHub/prestizniMaturitniProjekt/game/SkolaPuzzle/Content/Player/BP_FirstPersonCharacter.uasset",
 				"D:/prestizniMaturitniProjekt/game/SkolaPuzzle/Content/MainLevel.umap",
 				"D:/prestizniMaturitniProjekt/game/SkolaPuzzle/Content/GameMode.uasset",
 				"D:/prestizniMaturitniProjekt/game/SkolaPuzzle/Content/BP_GameMode.uasset",
