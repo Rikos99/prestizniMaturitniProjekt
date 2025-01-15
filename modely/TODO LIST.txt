@@ -1,0 +1,22 @@
+UI:
+- design pro kvízy
+- design pro kanón, boxy, tlačítka na swapování/zobrazení košů
+- design pro měřítka
+- design pro váhu
+- počítač (poslední)
+
+
+modely:
+
+- kanón
+- místo kam střílet koule z kanónu
+- ovládání
+- váha (
+- odměrka
+- laser
+- trubky/stěny (nápady, návrhy)
+- robot na kroket
+- NPC robot do místností (více personalit)
+
+
+- **plánek místností**
