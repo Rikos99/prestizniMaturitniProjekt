@@ -11,12 +11,13 @@ modely:
 - kanón
 - místo kam střílet koule z kanónu
 - ovládání
-- váha (
+- váha
 - odměrka
 - laser
 - trubky/stěny (nápady, návrhy)
 - robot na kroket
 - NPC robot do místností (více personalit)
-
+- umyvadlo
+- věci, co jsme nafotili v pátek (zaplnění chodeb)
 
 - **plánek místností**
