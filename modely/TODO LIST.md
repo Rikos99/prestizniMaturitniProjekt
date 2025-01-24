@@ -10,7 +10,7 @@
 - roboti
 - NPC robot do místností (více personalit)
 - umyvadlo
-- věci, co jsme nafotili v pátek 10.1. (?) = věci na zaplnění chodeb
+- věci, co jsme nafotili v pátek 10.1. = věci na zaplnění chodeb
 
 ## Návrhy
 - GUI kanónu
