@@ -1,4 +1,0 @@
-- Jak dosáhnout realistického výsledku - proces
-- Co ovlivňuje výsledek
-- Optimalizace - FPSka, drawcally (v UE by měly být nějaké pokročilejší nástroje krom Show FPS)
-- Zdroje (články)

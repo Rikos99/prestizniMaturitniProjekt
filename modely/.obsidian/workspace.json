@@ -1,0 +1,191 @@
+{
+  "main": {
+    "id": "bab8029740a3117f",
+    "type": "split",
+    "children": [
+      {
+        "id": "f1c146db0bf872ac",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d4302e9bb9b2f5d4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TODO LIST.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "TODO LIST"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "41a908a59ffe28af",
+    "type": "split",
+    "children": [
+      {
+        "id": "1b17b107c73fcebd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "78b6b2a2f6ca77ca",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "e4531cd0b127244a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "0e92bc6a1e1de688",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "349f4cc0303f7875",
+    "type": "split",
+    "children": [
+      {
+        "id": "bb7f11e2bbd31254",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "20badaf448b7d53b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "TODO LIST.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for TODO LIST"
+            }
+          },
+          {
+            "id": "dd095b2a61b4c7f1",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "TODO LIST.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from TODO LIST"
+            }
+          },
+          {
+            "id": "138acf1131b59db0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "3aadae05dcf4404e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "TODO LIST.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of TODO LIST"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "d4302e9bb9b2f5d4",
+  "lastOpenFiles": [
+    "zadani-casti-textu.txt",
+    "pocitacoveVybaveni/projektor/projektor.fbx",
+    "skolniNabytek/svetlo/textures/svetlo_DefaultMaterial_Normal.png",
+    "skolniNabytek/svetlo/textures/svetlo_DefaultMaterial_OcclusionRoughnessMetallic.png",
+    "skolniNabytek/svetlo/textures/svetlo_DefaultMaterial_BaseColor.png",
+    "skolniNabytek/svetlo/textures",
+    "skolniNabytek/svetlo/svetlo.spp",
+    "skolniNabytek/svetlo/svetlo.fbx",
+    "skolniNabytek/svetlo/svetlo.blend",
+    "skolniNabytek/svetlo",
+    "skolniNabytek/tabule/textures/tabule_DefaultMaterial_OcclusionRoughnessMetallic.png",
+    "skolniNabytek/tabule/textures/tabule_DefaultMaterial_Normal.png",
+    "skolniNabytek/tabule/textures/tabule_DefaultMaterial_BaseColor.png",
+    "skolniNabytek/tabule/tabule.spp",
+    "skolniNabytek/tabule/textures",
+    "skolniNabytek/tabule/tabule.fbx",
+    "skolniNabytek/tabule/tabule.blend1",
+    "pocitacoveVybaveni/svetlo/textures/svetlo_DefaultMaterial_OcclusionRoughnessMetallic.png",
+    "pocitacoveVybaveni/svetlo/textures/svetlo_DefaultMaterial_Normal.png",
+    "pocitacoveVybaveni/svetlo/textures/svetlo_DefaultMaterial_BaseColor.png",
+    "pocitacoveVybaveni/tabule/textures/tabule_DefaultMaterial_OcclusionRoughnessMetallic.png",
+    "Untitled.md",
+    "TODO LIST.md"
+  ]
+}
