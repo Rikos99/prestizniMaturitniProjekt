@@ -72,3 +72,5 @@ game/SkolaPuzzle/Plugins/**/Intermediate/*
 
 # Cache files for the editor to use
 game/SkolaPuzzle/DerivedDataCache/*
+
+*.spp
