@@ -9,6 +9,7 @@
 - ### laser - textury
 - trubky/stěny (nápady, návrhy) ???????
 - ### roboti
+- ### terminál pro autíčko
 - NPC robot do místností (více personalit)
 1) Schovává se
 	- Idle
