@@ -1,0 +1,18 @@
+BP_Cannon
+	Eventy:
+		BeginPlay
+			-ziskani vsech cilovych kosu
+		
+		SetUpWidgetBinds
+			-binds events pro 
+				TiltCannon
+					
+				RotateCannon
+				Shoot
+	Funkce:
+			VypocitejVysku (vypocita Z souradnici)
+				-parametry: vzdalenost, pocatecni rychlost, uhel, gravitacni sila
+			VypocitejUhel
+				-parametry: vzdalenost, pocatecni rychlost, vyska, gravitacni sila
+			GetSplinePoints
+				-

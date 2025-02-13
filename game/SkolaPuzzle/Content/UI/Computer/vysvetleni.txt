@@ -1,0 +1,32 @@
+BP_Computer
+	Event Iteract (interface) 
+		- na playerCharacteru zavola BeginOnWidgetFull
+WBP_Computer
+	OnInitialized 
+		- ziska aplikace z gamemodu a prida Shortcuts (ikony na plose)
+	LeaveComputerButton (OnPressed) 
+		- na playerCharacteru zavola EndOnWidgetFull
+WBP_AppShortcut
+	IconButton (OnPressed)
+		- projde vsechny otevrene aplikace na liste a jestli tento aplikace nema instanci, tak se vytvori instance na taskbaru, ale jestli uz nejaka instance okna je, tak se vytvori ciste instance okna do uz existujici instance na taskbaru ||| pro vytvoreni ciste okna, tak vola metodu primo na instanci appky na taskbaru
+		
+WBP_AppOnTaskbar
+	IconButton (OnPressed)
+		- jestli existuje jedna instance okna, tak se proste togglne viditelnost
+		- jestli existuje vice instanci oken, tak se zviditelni "Sub apps", coz je seznam (pole wbp_MultipleAppsTaskbar, kazdy je spjaty s jednou instanci okna) 
+		otevrenych oken. Pri vytvareni techto SubAppShortcuts se u nich nastavi, jake okno "reprezentuji" a pridaji se jako child na WBP_AppOnTaskbar (self)
+
+WBP_MultipleAppsTaskbarShortcut
+	Event Tick
+		- jestli je inance okna ,ktere reprezentuje validni (pokud by uzivatel okno zavrel, ale lista by byla porad otevrena)
+		- nastavi odstin "ikony" shortcutu, podle viditelnosti
+	Button (OnPressed)
+		- "Sub apps" se schovaji a okno, ktere je reprezentovano vybranym shortcutem se otevre a da se do popredi
+	Button (OnHovered)
+		- okno shortcutu, ktery hoverujeme se jako jedine ukaze na obrazovce 
+	Button (OnUnhovered)
+		- vsechny okna se vrati do posledniho stavu jejich viditelnosti
+		
+		
+WBP_PlainWindow
+	- logika pro posouvani a scalovani oken
