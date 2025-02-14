@@ -1,13 +1,6 @@
-## Unreal
-- # Dialogue system - o prázdninách !!!!
 ## Modely
-- # Chodby!!!!
-- ### kanón
-- ### místo kam střílet koule z kanónu
 - ### váha
 - ### odměrka
-- ### laser - textury
-- trubky/stěny (nápady, návrhy) ???????
 - ### roboti
 - ### terminál pro autíčko
 - NPC robot do místností (více personalit)
@@ -41,7 +34,8 @@
 
 ## Návrhy
 - GUI kanónu
-- design pro kvízy
+- GUI turtle scratch klonu
+- design pro kvízy - Jeopardy?
 - design pro kanón, boxy, tlačítka na swapování/zobrazení košů
 - design pro měřítka
 - design pro váhu
