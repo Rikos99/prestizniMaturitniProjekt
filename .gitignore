@@ -51,6 +51,7 @@ game/SkolaPuzzle/Plugins/**/Binaries/*
 
 # Builds
 game/SkolaPuzzle/Build/*
+build/
 
 # Whitelist PakBlacklist-<BuildConfiguration>.txt files
 !Build/*/
