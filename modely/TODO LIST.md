@@ -1,4 +1,8 @@
+## General
+- ### Upravit pozice oken, jsou na křivo
+
 ## Modely
+- ## nové dveře - staré nesedí do některých pantů
 - ### váha
 - ### odměrka
 - ### roboti
