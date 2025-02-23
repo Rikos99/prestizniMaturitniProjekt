@@ -110,4 +110,86 @@ BPAC_Inventory [Actor component]
 						
 				-volame return s vystupnima hodnotama ItemDropped [Bool] jako True a ActorRef [Bp_ItemParent Object Reference] jako objekt ze SpawnActor prevedeneho na BP_ItemParent
 		
+		SetAtributesFromStructToObject
+			- pro objekt bp_itemparent nastavi promenne ItemAtributes [String:String] a Slotable [Bool]
+			-vstupy:
+				-Object [BP_ItemParent]
+				-Atributes [String:String]
+				-Slotable [Bool]
+			-vystupy:
+				-v-
+
+		ObjectToStruct
+			- z obejktu potomka tridy BP_ItemParent ziska promenne a vytvori strukturu St_Item, kterou funkce vrati
+			-vstupy:
+				-Object [BP_ItemParent]
+			-vystupy:
+				-Struct [St_Item]
+				
+		RemoveItem
+			- vycisti slot v InventoryMap s klicovou hodnotou Index [Integer]
+			-vstupy:
+				-Index [Integer]
+			-vystupy:
+				-v-
+			-prubeh:
+				-prepise value v Self.InventoryMap pomoci key, ktery je Index [Integer] ze vstupu
+				-zavola [WBP_InventoryBar].UpdateInventorySlot coz vymaze text/ikonu itemu na obrazovce hrace, ktereho jsme ze slotu vyhodili
+		AddItem
+			- v self.InventoryMap s klicovou hodnotou Index [Integer] ze vstupu se prepise value na Item [St_Item] ze vstupu
+			-vstupy:
+				-Item [St_Item]
+				-Index [Integer]
+			-vystupy:
+				-v-
+			
+		AddToInventory
+			- prida item do inventare. vlozi item do self.InventoryMap bud vlozi primo jako strukturu [St_Item] nebo z objektu [BP_ItemParent]
+			-vstupy:
+				-Item [BP_ItemParent]
+				-Struct [St_Item]
+			-vystupy:
+				-ItemAdded [Bool]
+				
+			-prubeh:
+				-zkontroluje, jestli je v inventari ve slotu s indexem Self.ActiveSlotIndex misto 
+					->TRUE: (ve slotu pouzivanym hracem je volno)
+						-zkontroluje, jestli je vstupni parametr Item [Bp_ItemParent] validni
+							->TRUE: (chceme ulozit objekt)  *stejne*
+								- zavolame Self.ObjectToStruct se vstupnim parametrem Item [Bp_ItemParent], ktera vrati strukturu [St_Item] objektu
+								- zavolame Self.AddItem, kde jako vstupni parametry posleme strukturu itemu, ktery cheme vlozit a jako Index posleme self.ActiveSlotIndex
+							->FALSE: (chceme ulozit strukturu)
+								- zavolame Self.AddItem, kde jako vstupni parametry posleme vstupni parametr funkce AddToInventory (ve ktere se nachazime) strukturu Struct [BP_ItemParent], kterou cheme vlozit a jako Index poslemeself.ActiveSlotIndex  *stejne*
+							
+					->FALSE: (ve slotu pouzivanym hracem NENI volno)
+						- zavolame Self.GetFirstEmptyIndex, ktery nam vrati index volneho slotu. zkontrolujeme, jestli index "existuje" (funkce nevrati -1)
+							->TRUE:
+								-zkontroluje, jestli je vstupni parametr Item [Bp_ItemParent] validni
+									->TRUE: (chceme ulozit objekt)  *stejne*
+										- zavolame Self.ObjectToStruct se vstupnim parametrem Item [Bp_ItemParent], ktera vrati strukturu [St_Item] objektu
+										- zavolame Self.AddItem, kde jako vstupni parametry posleme strukturu itemu, ktery cheme vlozit a jako Index posleme self.ActiveSlotIndex
+									->FALSE: (chceme ulozit strukturu) 
+										- zavolame Self.AddItem, kde jako vstupni parametry posleme vstupni parametr funkce AddToInventory (ve ktere se nachazime) strukturu Struct [BP_ItemParent], kterou cheme vlozit a jako Index poslemeself.ActiveSlotIndex	 *stejne*
+							->FALSE:
+								-zavolame Return a vratime vystupni parametr ItemAdded [Bool]
+								
+								
+								
+WBP_InventoryBar
+	-Vizualni struktura:
 		
+	-Eventy:
+		Event Construct
+			-
+	-Funkce:
+		UpdateInventorySlot
+		
+WBP_InventoryBarItem
+	-Vizualni struktura:
+		
+	-Eventy:
+		Event Construct
+			-
+	-Funkce:
+		SetAsSelected
+		SetAsNotSelected
