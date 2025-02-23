@@ -1,0 +1,113 @@
+St_Item
+	struktura pro ukladani premetu, ktere hrac muze vzit do inventare
+	atributy:
+		ObjectName [String]
+		SlotImage [Texture 2D]
+		Class [Actor class reference]
+		Atributes [mapa String:String]
+		Transform Scale [Vector]
+		Slotable [Boolean]
+		
+
+
+BPAC_Inventory [Actor component]
+	Promenne:
+		Inventory map [Integer:St_Item]
+			-St_Item je struktura pro popsani itemu
+			
+		Size [Integer]
+			-pocet slotu v inventari
+		Active Slot Index [Integer]
+			-slot, ktery je prave pouzivan
+			- hodnota bude bud 0 az Size-1, to znamena, ze hrac ma vybrany slot, ktery "exsituje". Pokud je hodnota -1, tak to znamena, ze hrac nema vybrany slot, ktery existuje
+		InventoryBarWidget [WBP_Inventory bar type]
+			-widget pro vizualni reprezentaci inventare na hracove obrazovce
+	
+	Eventy:
+		BeginPlay
+			-do Inventory map se vygeneruji sloty, mnozstvi se odviji od promenne Size
+	
+	Funkce:
+		Is Slot Index Empty
+			-slouzi pro zjisteni, jestli je slot inventare prazdny
+			
+			-vstupy:
+				Index [Integer]
+			-vstupy:
+				ReturnValue [Bool]
+			
+			- v promenne InventoryMap ziskame value [St_Item] na indexu podle vstupniho parametru Index a kontrolujeme, zda struktura [St_Item] je prazdna. To kontrolujeme tak, ze si ze struktury [St_Item] vytahneme ObjectName [String] a to porovnavame s prazdnou hodnotou. Boolean tohoto provovnani vracime jako vystupni parametr ReturnValue [Bool].
+		
+		GetFirstEmptyIndex
+			-slouzi pro ziskani prvniho volneho slotu v inventari
+			
+			-vstupy:
+				-v-
+			-vstupy:
+				Index [Integer]
+			
+			- cyklem projedeme hodnoty 0 az Size[Integer]-1, ktere posilame do funkce IsSlotIndexEmpty jako vstupni parametr Index [Integer]. Pokud funkce vrati true, takze inventarovy slot na danem indexu iterace je volny, tak zavolame return funkce GetFirstEmptyIndex a jako vystupni parametr posilame index iterace cyklu, kde slot v inventari byl prazdny. Pokud zadny ze slotu prazdny neni, tak funkce vraci -1;
+		
+		GetClassOfItemInHand
+			- slouzi pro ziskani tridy itemu, ktery ma hrac v ruce
+			
+			-vstupy:
+				-v-
+			-vstupy:
+				Class [Actor Class Reference]
+				
+			- pomoci funkce Find v mape self.InventoryMap hledame prvek s klicovou hodnotou self.ActiveSlotIndex [Integer]. Tak zisakme strukturu itemu [St_item] na pozici aktivniho indexu inventare. Z teto struktury pak ziskame Class [Actor class reference] a ten posleme jako vystupni parametr Class [Actor Class Reference].
+			
+		DropItem
+			- slouzi k presunuti itemu [St_Item] z inventare do sveta jako [Actor]
+			
+			-vstupy:
+				NewLocation [Vector] 
+					-lokace, kde se ma item spawnout
+			-vstupy:
+				ItemDropped [Bool]
+					-zda se podaril item spawnout
+				ActorRef [Bp_ItemParent Object Reference]
+					-reference na BP_ItemParent, ktery byl spawnut
+				
+			- prubeh:
+				-zkontroluje, zda je self.ActiveSlotIndex [Integer] vetsi nebo rovno 0, protoze, hodnota byla -1, tak by to znamenalo, ze hracem vybrany slot "neexistuje". U hodnoty -1 zavola return s vystupnima hodnotama ItemDropped [Bool] jako False a ActorRef [Bp_ItemParent Object Reference] jako null
+				- z InvetoryMap [Index:St_Item] ziskame strutkuru [St_Item] pomoci self.ActiveSlotIndex [Integer]
+				- zavolame metodu SpawnActor. Do vsupnich parametru:
+					1. Class [Actor Class Reference Class]
+						- vyznma - trida obejkt, ktery cheme spawnout
+						- hodonota - tu zisakme ze strutkury [St_Item], kterou jsme zisakli v minulem kroku
+					2. SpawnTransformLocation [Vector]
+						- vyznam - lokace, kam chceme objekt spawnout
+						- hodnota - NewLocation [Vector], coz je vstupni parametr funkce DropItem, ve ktere se nachazime
+					3. SpawnTransformRotation
+						- vyznam - rotace objektu, ktery cheme spawnout
+						- hodnota - ziskame rotaci hrace GetPlayerCharacter->GetActorRotation
+					4. SpawnTransformScale [Vector]
+						- vyznam - scale objektu, ktery chceme spawnout
+						- hodnota - TransformScale [Vector] ze strutkury [St_Item] 
+					5. Collision Handling Override [ESpawnActorCollisionHandlingMethod Enum]
+						- vyznam - urcuje, jestli colize hraji roli u rozhodovani, jestli se objekt muze spawnout
+						- hodnota - "Try To Adjust Location, But Always Spawn"        *********************
+						
+				- zkontrolujeme, jestli je objekt vraceny metodou SpawnActor validni, jestli ne, tak volame return s vystupnima hodnotama ItemDropped [Bool] jako False a ActorRef [Bp_ItemParent Object Reference] jako null
+				- objekt vraceny metodou SpawnActor prevadime (cast to) na tridu Bp_ItemParent (je to parent trida kazdeho objektu, ktery jde ve svete vzit do inventare) a potom volame:
+					a) self.SetAtributesFromStructToObject a jako vstupni parametry posilame:
+						1. Object [Bp_ItemParent]
+							- vyznam - objekt tridy BP_ItemParent u ktereho cheme nastavit promenne atributy a slotable
+							- hodnota - objekt ze SpawnActor, ktery jsme v minulem kroku prevedli na Bp_ItemParent
+						2. Atributes [String:String]
+							- vyznam - jake tributy pridavame
+							- hodnota - ze strutkury [St_Item] ziskame Atributes [String:String]
+						3. Slotable [Bool]
+							- vyznam - zda jde item zastrkovat/pridavat do BP_ActorWithSlots
+							- hodnota - ze strutkury [St_Item] ziskame Slotable [Bool]
+					b) [BP_itemParent].OnSpawn
+						- volame metodu objekt ze SpawnActor prevedeneho na BP_ItemParent
+					c) self.RemoveItem
+						- pro vymazani struktury itemu, ktery jsme prave spawnuli
+						- vstupni parametr je Index [Integer] do ktereho posilame Self.ActiveSlotIndex 
+						
+				-volame return s vystupnima hodnotama ItemDropped [Bool] jako True a ActorRef [Bp_ItemParent Object Reference] jako objekt ze SpawnActor prevedeneho na BP_ItemParent
+		
+		
