@@ -1,12 +1,8 @@
-## General
-- ### Upravit pozice oken, jsou na křivo
-
 ## Modely
-- ## nové dveře - staré nesedí do některých pantů
+- ## nové dveře - upravit možnost pro double doors (možnost i bez kliky)
 - ### váha
 - ### odměrka
 - ### roboti
-- ### terminál pro autíčko
 - NPC robot do místností (více personalit)
 1) Schovává se
 	- Idle
