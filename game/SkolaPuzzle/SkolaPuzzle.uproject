@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "5.4",
+	"EngineAssociation": "5.5",
 	"Category": "",
 	"Description": "",
 	"Plugins": [
@@ -14,11 +14,6 @@
 		{
 			"Name": "WebBrowserWidget",
 			"Enabled": true
-		},
-		{
-			"Name": "Importer",
-			"Enabled": true,
-			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/4e5f1c2bb1b8476fb5ba0ab7fade1172"
 		}
 	]
 }
