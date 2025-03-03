@@ -1,5 +1,6 @@
+# zábradlí chybí do 1. patra
+
 ## Modely
-- ## nové dveře - upravit možnost pro double doors (možnost i bez kliky)
 - ### váha
 - ### odměrka
 - ### roboti
@@ -33,7 +34,6 @@
 - věci, co jsme nafotili v pátek 10.1. = věci na zaplnění chodeb
 
 ## Návrhy
-- GUI kanónu
 - GUI turtle scratch klonu
 - design pro kvízy - Jeopardy?
 - design pro kanón, boxy, tlačítka na swapování/zobrazení košů
