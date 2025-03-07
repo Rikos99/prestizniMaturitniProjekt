@@ -41,3 +41,5 @@
 - design pro váhu
 - počítač (poslední)
 - roboti
+- Pause menu
+- Main menu
