@@ -8,6 +8,7 @@
 # zábradlí chybí do 1. patra
 
 ## Modely
+- ### indikátor aktuálního patra do krátké chodby
 - ### váha
 - ### odměrka
 - ### roboti
