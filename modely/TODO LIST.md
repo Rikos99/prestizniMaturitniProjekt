@@ -1,3 +1,10 @@
+# upravit textury - nižší roughness, moc se lesknou
+# mít více pater (zkopírovat 2. patro)
+# patra mají jiné barvy spodní
+# upravit dveře - mezera mezi dveřmi (divné)
+# jiný materiál dveří
+# použít materiál lina jinde i v jiných barvách
+
 # zábradlí chybí do 1. patra
 
 ## Modely
