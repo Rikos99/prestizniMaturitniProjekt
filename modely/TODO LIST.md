@@ -1,4 +1,3 @@
-# patra mají jiné barvy spodní
 # upravit dveře - mezera mezi dveřmi (divné)
 # jiný materiál dveří
 
