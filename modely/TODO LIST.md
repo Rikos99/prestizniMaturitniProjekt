@@ -1,4 +1,6 @@
-# upravit dveře - mezera mezi dveřmi (divné)
+# DIALOGOVÝ SYSTÉM
+# PAUSE A MAIN MENU
+# cutsceny?
 # jiný materiál dveří
 
 ## Modely
@@ -23,6 +25,4 @@
 - design pro tlačítka na swapování/zobrazení košů (kanon)
 - design pro váhu
 - počítač (poslední)
-- roboti
-- Pause menu
-- Main menu
+- robot
