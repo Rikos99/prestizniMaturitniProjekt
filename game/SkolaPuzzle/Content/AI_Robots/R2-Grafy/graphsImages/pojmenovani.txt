@@ -1,0 +1,12 @@
+linear1		y=1*x+1
+linear2		y=-2x-3
+linear3		y=0.5x-1
+quadratic1		y=1*(x-1)^{2}+1
+quadratic2		y=2(x-1)^{2}+1
+quadratic3		y=-2(x+1)^{2}-1
+
+exponential1 y=(x+1)^{3}-2
+exponential2 y=-(x)^{3}+1
+exponential3 y=(x)^{-2}-1
+exponential4 y=2(x)^{-3}-1
+ 
