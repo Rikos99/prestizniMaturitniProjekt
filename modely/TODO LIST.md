@@ -1,5 +1,5 @@
-# DIALOGOVÝ SYSTÉM
-# PAUSE A MAIN MENU
+# LOGO !!!!!
+## název našeho uskupení
 # cutsceny?
 # jiný materiál dveří
 
