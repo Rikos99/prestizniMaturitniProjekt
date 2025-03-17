@@ -1,5 +1,4 @@
 ## název našeho uskupení
-# IKONKY K ITEMŮM - dostat od Standy seznam itemů
 # cutsceny?
 # jiný materiál dveří
 

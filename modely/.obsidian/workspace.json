@@ -165,6 +165,10 @@
   },
   "active": "d4302e9bb9b2f5d4",
   "lastOpenFiles": [
+    "inventarGUI/itemSprite-cube.png",
+    "inventarGUI/itemSprite-card.png",
+    "inventarGUI/itemSprite-key.png",
+    "inventarGUI/itemSprites.aseprite",
     "skolniNabytek/dvere/dvereLepsi/dvereServerovna/dvereServerovna.25.03.16.02_27.spp",
     "skolniNabytek/dvere/dvereLepsi/dvereServerovna/dvereServerovna.spp.tmpsave",
     "skolniNabytek/dvere/dvereLepsi/dvereServerovna/dvereServerovna.spp.lock",
@@ -180,12 +184,8 @@
     "skolniNabytek/dvere/dvereLepsi/dvereServerovna/textures/dvereServerovna_DefaultMaterial_Normal.png",
     "skolniNabytek/dvere/dvereLepsi/dvereServerovna/textures/dvereServerovna_DefaultMaterial_OcclusionRoughnessMetallic.png",
     "skolniNabytek/dvere/dvereLepsi/dvereServerovna/textures/dvereServerovna_DefaultMaterial_BaseColor.png",
-    "skolniNabytek/dvere/dvereLepsi/dvereServerovna/textures",
-    "skolniNabytek/dvere/dvereLepsi/dvereServerovna/New folder",
     "mainMenu/buttonBG-left-top.png",
     "mainMenu/buttonBG-left-bottom.png",
-    "mainMenu/buttonBG-middle-middle.png",
-    "mainMenu/buttonBG-middle-bottom.png",
     "Untitled.md",
     "TODO LIST.md"
   ]
