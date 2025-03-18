@@ -1,4 +1,5 @@
-## název našeho uskupení
+## název našeho uskupení,
+# DODĚLAT DIALOGUE SYSTÉM NA MOŽNOSTI
 # cutsceny?
 # jiný materiál dveří
 
