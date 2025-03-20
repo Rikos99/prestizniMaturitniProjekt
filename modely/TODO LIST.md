@@ -1,6 +1,6 @@
 ## název našeho uskupení
 # DODĚLAT DIALOGUE SYSTÉM NA MOŽNOSTI
-# cutsceny?
+# cutscena - jak budou naplněné chodby
 
 
 ## Modely
