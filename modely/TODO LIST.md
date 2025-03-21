@@ -4,8 +4,7 @@
 
 
 ## Modely
-# DODĚLAT KÁDI S VODOU !!!!
-- voda buguje, dát šířků inner kádě na 1.5 m & nastavit parametry v actoru
+
 
 - věci, co jsme nafotili v pátek 10.1. = věci na zaplnění chodeb
 - jiný materiál dveří
