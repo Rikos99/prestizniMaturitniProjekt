@@ -6,4 +6,3 @@
 - jiný materiál dveří
 ## GUI
 - počítač
-- PLUTO ?
