@@ -1,0 +1,214 @@
+[
+	{
+		"Name": "Čtverec",
+		"id": 0,
+		"text": "",
+		"correctLinesRelative": [
+			{
+				"start":
+				{
+					"X": 0,
+					"Y": 0
+				},
+				"end":
+				{
+					"X": 0,
+					"Y": -100
+				}
+			},
+			{
+				"start":
+				{
+					"X": 0,
+					"Y": -100
+				},
+				"end":
+				{
+					"X": 100,
+					"Y": -100
+				}
+			},
+			{
+				"start":
+				{
+					"X": 100,
+					"Y": -100
+				},
+				"end":
+				{
+					"X": 100,
+					"Y": 0
+				}
+			},
+			{
+				"start":
+				{
+					"X": 100,
+					"Y": 0
+				},
+				"end":
+				{
+					"X": 0,
+					"Y": 0
+				}
+			}
+		],
+		"difficulty": "Easy",
+		"turtleStartPosition":
+		{
+			"X": 200,
+			"Y": 300
+		},
+		"finished": false
+	},{
+		"Name": "Trojúhelník",
+		"id": 1,
+		"text": "",
+		"correctLinesRelative": [
+			{
+				"start":
+				{
+					"X": 0,
+					"Y": 0
+				},
+				"end":
+				{
+					"X": 50,
+					"Y": -100
+				}
+			},
+			{
+				"start":
+				{
+					"X": 50,
+					"Y": -100
+				},
+				"end":
+				{
+					"X": 100,
+					"Y": 0
+				}
+			},
+			{
+				"start":
+				{
+					"X": 100,
+					"Y": 0
+				},
+				"end":
+				{
+					"X": 0,
+					"Y": 0
+				}
+			}
+		],
+		"difficulty": "Easy",
+		"turtleStartPosition":
+		{
+			"X": 200,
+			"Y": 300
+		},
+		"finished": false
+	},
+	{
+		"Name": "Velký Trojúhelník",
+		"id": 2,
+		"text": "",
+		"correctLinesRelative": [
+			{
+				"start":
+				{
+					"X": 0,
+					"Y": 0
+				},
+				"end":
+				{
+					"X": 100,
+					"Y": -200
+				}
+			},
+			{
+				"start":
+				{
+					"X": 100,
+					"Y": -200
+				},
+				"end":
+				{
+					"X": 200,
+					"Y": 0
+				}
+			},
+			{
+				"start":
+				{
+					"X": 200,
+					"Y": 0
+				},
+				"end":
+				{
+					"X": 0,
+					"Y": 0
+				}
+			}
+		],
+		"difficulty": "Easy",
+		"turtleStartPosition":
+		{
+			"X": 150,
+			"Y": 300
+		},
+		"finished": false
+	},
+	{
+		"Name": "Rovnostranný Trojúhelník",
+		"id": 3,
+		"text": "",
+		"correctLinesRelative": [
+			{
+				"start":
+				{
+					"X": 0,
+					"Y": 0
+				},
+				"end":
+				{
+					"X": 100,
+					"Y": -173
+				}
+			},
+			{
+				"start":
+				{
+					"X": 100,
+					"Y": -173
+				},
+				"end":
+				{
+					"X": 200,
+					"Y": 0
+				}
+			},
+			{
+				"start":
+				{
+					"X": 200,
+					"Y": 0
+				},
+				"end":
+				{
+					"X": 0,
+					"Y": 0
+				}
+			}
+		],
+		"difficulty": "Easy",
+		"turtleStartPosition":
+		{
+			"X": 150,
+			"Y": 300
+		},
+		"finished": false
+	}
+
+]
